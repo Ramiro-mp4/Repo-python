@@ -57,14 +57,14 @@
 
 # Write your function here
 
-def more_than_n(lst, item, n):
-    if lst.count(item) > n:
-        return True 
-    else: 
-        return False
+# def more_than_n(lst, item, n):
+#     if lst.count(item) > n:
+#         return True 
+#     else: 
+#         return False
 
-# Uncomment the line below when your function is done
-print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
+# # Uncomment the line below when your function is done
+# print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
 
 #----------------------------------------------------------
 # Challenge 4 - Append Size
@@ -77,10 +77,13 @@ print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
 # For example, if lst was [23, 42, 108], the function should return [23, 42, 108, 3] because the size of lst was originally 3.
 
 #Write your function here
+# def append_size(lst):
+#     len(lst)
+#     lst.append(len(lst))
+#     return lst
 
-
-#Uncomment the line below when your function is done
-#print(append_size([23, 42, 108]))
+# #Uncomment the line below when your function is done
+# print(append_size([23, 42, 108]))
 
 #----------------------------------------------------------
 # Challenge 5 - Combine Sort
@@ -92,6 +95,11 @@ print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
 
 #Write your function here
 
+def combine_sort(lst1, lst2):
+    lst3 = list(zip(lst1, lst2))
+    lst3.sort()
+    return lst3
+
 
 #Uncomment the line below when your function is done
-#print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
+print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))
